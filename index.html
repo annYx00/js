@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="texto">Meu nome é</h1>
+    
+    <button onclick="mudarCor()"> Mudar Cor</button>
+    <button onclick="aumentaFonte()">Aumentar fonte</button>
+    <button onclick="diminuiFonte()">Diminuir fonte</button>
+    
+    <script>
+        function mudarCor(){
+     var elementoTexto = document.getElementById("texto");
+     elementoTexto.style.color = "red";
+        }
+
+        var tamanhoFonte = 16;
+       
+        function aumentaFonte(){
+     var elementoTexto = document.getElementById("texto");
+     tamanhoFonte += 2;
+     elementoTexto.style.fontSize = tamanhoFonte + "px";
+        }
+
+        function diminuiFonte(){
+     var elementoTexto = document.getElementById("texto");
+     tamanhoFonte -= 2;
+     elementoTexto.style.fontSize = tamanhoFonte + "px";
+        }
+
+
+    </script>
+    
+</body>
+</html>
